@@ -1,0 +1,1 @@
+shiny::runApp("~/Documents/rooster_head/dsna_bess_network", launch.browser = TRUE)

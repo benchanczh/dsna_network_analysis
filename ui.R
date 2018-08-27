@@ -51,6 +51,7 @@ body <- dashboardBody(
                            aceEditor(
                              "code",
                              mode = "sql",
+                             wordWrap = TRUE,
                              theme = "tomorrow_night_eighties",
                              height = "200px",
                              fontSize = 14,
@@ -134,9 +135,8 @@ body <- dashboardBody(
 ## DASHBOARD PAGE ------------------------------------------------------------------------------------------------------
 ui <- dashboardPage(
   dashboardHeader(title = "dsna bess network",
-                  tags$li(class = "dropdown",
-                          tags$a(tags$img(src = "SB_logo_White.png", width = 105)
-                          )
+                  tags$li(class = "dropdown"
+                          # tags$a(tags$img(src = "SB_logo_White.png", width = 105))
                   )
   ),
   sidebar,

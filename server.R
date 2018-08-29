@@ -10,7 +10,7 @@ library(shinyAce)
 library(shinyalert)
 
 ## CREATE CONNECTION TO dsna BY DSN ------------------------------------------------------------------------------------
-pool <- dbPool(odbc::odbc(), dsn = "HP1-64bit", Port = 10000)
+pool <- dbPool(odbc::odbc(), dsn = <your_dsn>, Port = 10000)
 
 onStop(function() {
   poolClose(pool)
